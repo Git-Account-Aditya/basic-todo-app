@@ -12,7 +12,7 @@ app.include_router(todo_router, prefix="/api/routes", tags=["todos"])
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://localhost:8000", "http://localhost:5173"],
+    allow_origins=["https://localhost:5173", "http://localhost:5173", "http://localhost:8000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]
